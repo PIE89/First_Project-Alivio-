@@ -1,0 +1,211 @@
+.second-part {
+  position: relative;
+  min-height: 1386px;
+  margin-top: 169px;
+  margin-bottom: 51px;
+  padding-left: 15px;
+}
+
+.header-second-part {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 52px;
+}
+
+.header-second-part-left {
+  max-width: 584px;
+  margin-right: 30px;
+}
+.header-second-part-left-header {
+  color: #424242;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  line-height: 157%;
+  font-weight: 600;
+}
+.header-second-part-left-text {
+  color: #01996d;
+  font-family: "Georgia", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 157%;
+}
+
+.header-second-part-right {
+  max-width: 671px;
+  padding-top: 58px;
+}
+
+.header-second-part-right-content {
+  color: #424242;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  line-height: 157%;
+  font-weight: 500;
+}
+
+/* main-section-second-part (LEFT — SIDE) */
+
+.main-second-part {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 390px);
+  column-gap: 95px;
+}
+
+.header-lmsspart {
+  position: relative;
+}
+.header-lmsspart-01 h2 {
+  font-weight: 400;
+  color: rgba(1, 153, 109, 0.2);
+  font-size: 150px;
+  font-family: "Georgia", sans-serif;
+}
+
+.header-lmsspart-text {
+  position: absolute;
+  bottom: 20%;
+  right: 31%;
+}
+
+.header-lmsspart-text h3 {
+  font-family: "Georgia", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.main-lmsspart {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+/* MIDDLE SIDE */
+
+.mid-main-section-second-part {
+  margin-top: 287px;
+}
+
+.header-mmsspart {
+  position: relative;
+}
+
+.header-mmsspart-01 h2 {
+  font-weight: 400;
+  color: rgba(1, 153, 109, 0.2);
+  font-size: 150px;
+  font-family: "Georgia", sans-serif;
+}
+
+.header-mmsspart-text {
+  position: absolute;
+  bottom: 21%;
+  left: 19%;
+}
+
+.header-mmsspart-text h3 {
+  font-family: "Georgia", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.main-mmsspart {
+  margin-bottom: 37px;
+}
+
+/* RIGHT SIDE */
+
+.right-main-section-second-part {
+  margin-top: 54px;
+}
+
+.header-rmsspart {
+  position: relative;
+}
+
+.header-rmsspart-01 h2 {
+  font-weight: 400;
+  color: rgba(1, 153, 109, 0.2);
+  font-size: 150px;
+  font-family: "Georgia", sans-serif;
+}
+
+.header-rmsspart-text {
+  position: absolute;
+  bottom: 21%;
+  left: 30%;
+}
+
+.header-rmsspart-text h3 {
+  font-family: "Georgia", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.main-rmsspart {
+  margin-bottom: 48px;
+}
+
+/* IMAGES */
+
+.img-1,
+.img-2,
+.img-3 {
+  border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+  .second-part {
+    margin-top: 100px;
+  }
+  .header-second-part {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-second-part-left {
+    max-width: unset;
+  }
+  .header-second-part-left-header {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .header-second-part-left-text {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .header-second-part-right {
+    max-width: unset;
+    padding-top: 30px;
+  }
+  .header-second-part-right-content {
+    font-size: 18px;
+  }
+  .mid-main-section-second-part,
+  .right-main-section-second-part {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-second-part-left-text {
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .header-second-part-right {
+    padding-top: 20px;
+  }
+  .header-second-part-right-content {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .header-second-part,
+  .right-main-section-second-part,
+  .mid-main-section-second-part {
+    padding-bottom: 30px;
+  }
+  .main-second-part {
+    grid-template-columns: 1fr;
+  }
+}

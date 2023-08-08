@@ -1,0 +1,31 @@
+.footer {
+  min-height: 566px;
+  background-color: #245852;
+}
+
+.footer-column {
+  color: aliceblue;
+  padding-left: 15px;
+  padding-top: 105px;
+}
+
+.logo-footer {
+  width: fit-content;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 74px;
+  gap: 60px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.footer-links a {
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}

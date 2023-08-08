@@ -1,0 +1,139 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #424242;
+}
+
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
+}
+
+/* Grid */
+
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1400px;
+}
+
+@media (max-width: 1399px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* header-navigation */
+
+.header {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #d6d6d6;
+  line-height: 1;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  margin-left: 172px;
+  color: #292929;
+}
+
+.header-nav-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav-ul li + li {
+  margin-left: 70px;
+}
+
+.header-row-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-login-link {
+  margin-top: -1px;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.header-row-btn {
+  display: flex;
+  min-height: 51px;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #01996d;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4px;
+
+  margin-left: 35px;
+}
+
+.header-login-link:hover {
+  color: #01996d;
+  transition: opacity 0.2s ease;
+}
+
+.header-nav-ul li:hover {
+  color: #01996d;
+  transition: opacity 0.2s ease;
+}
+
+.header-row-btn:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+@media (max-width: 1399px) {
+  .header {
+    width: 100%;
+  }
+
+  .header-row {
+    justify-content: center;
+  }
+
+  .navigation {
+    margin-left: 90px;
+  }
+
+  .header-nav-ul li + li {
+    margin-left: 40px;
+  }
+  .header-row-right {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navigation,
+  .header-row-right {
+    display: none;
+  }
+}
